@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to bottom, #f5c454, #b2b092);
+    height: 100vh; 
+    margin: 0;
+    font-family: serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+.image img {
+    width: 80%;
+    margin-top: auto;
+    margin-left: 40px;
+}
+.content h1,p {
+    margin-bottom: 50px;
+}
+@media (max-width: 667px) {
+    .container {
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px;
+    }
+
+    .text, .image {
+        width: 100%; 
+        text-align: center;
+    }
+
+    .image img {
+        width: 90%; 
+        margin-left: 5%; 
+        margin-right: 5%;
+    }
+
+    .text h1, .text p {
+        margin-bottom: 20px; 
+        font-size: 20px;
+        margin-top : 30px;
+    }
+}
