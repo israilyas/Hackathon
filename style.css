@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #f5c454, #b2b092);
+    background: linear-gradient(to left, #f5c454, #b2b092);
     height: 100vh; 
     margin: 0;
     font-family: serif;
@@ -7,40 +7,30 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    gap: 40px;
-    margin-top: 40px;
-}
-.image img {
-    width: 80%;
-    margin-top: auto;
-    margin-left: 40px;
+
 }
 .content h1,p {
     margin-bottom: 50px;
 }
-@media (max-width: 667px) {
-    .container {
-        flex-direction: column;
-        align-items: center; 
-        gap: 20px;
-    }
 
-    .text, .image {
-        width: 100%; 
-        text-align: center;
-    }
+   /* Custom responsive font sizes */
+.fs-sm-3 {
+    font-size: 1.25rem; /* Font size for small devices */
+}
 
-    .image img {
-        width: 90%; 
-        margin-left: 5%; 
-        margin-right: 5%;
-    }
+@media (min-width: 768px) {
 
-    .text h1, .text p {
-        margin-bottom: 20px; 
-        font-size: 20px;
-        margin-top : 30px;
+    .fs-md-2 {
+        font-size: 1.6rem; /* Font size for medium devices */
     }
 }
+
+@media (min-width: 992px) {
+    .fs-lg-1 {
+        font-size: 2rem; /* Font size for large devices */
+    }
+}
+
+
